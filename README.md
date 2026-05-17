@@ -121,3 +121,8 @@ Berikut tabel kebenarannya:
 |   0   |   1   |  LOW (OFF) |
 |   1   |   0   |  LOW (OFF) |
 |   1   |   1   |  HIGH (ON) |
+
+<br>
+
+### Referensi
+[Link Tinkercad](https://www.tinkercad.com/things/b4zTZpq5OK3-pert8-praksisdig?sharecode=J_NMEL4Qnbh_BZo_YMhxg6CQbPzr_iyVJqiaEJcwUz8)
