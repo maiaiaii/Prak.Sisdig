@@ -20,6 +20,8 @@ Semua rangkaian dipasangkan dengan Power supply DC, LED berwarna merah, resistor
 
 Logika gerbang AND adalah semua input harus HIGH agar output-nya HIGH. Pada rangkaian, terlihat bahwa input berasal dari DIP switch 1 dan 2 atau anggap saja A dan B. Jika tegangan di-set 5V, lalu A dan B dinyalakan, maka LED akan menyala.
 
+Gerbang AND bekerja dengan prinsip bahwa seluruh input harus aktif secara bersamaan agar menghasilkan output HIGH. Jika salah satu input saja bernilai LOW, maka output tetap LOW sehingga LED tidak menyala. Gerbang ini biasanya digunakan pada sistem yang membutuhkan beberapa syarat sekaligus untuk mengaktifkan suatu rangkaian.
+
 Berikut tabel kebenarannya:
 | A (1) | B (2) | OUTPUT LED |
 |-------|-------|------------|
@@ -36,6 +38,8 @@ Berikut tabel kebenarannya:
 
 Logika gerbang OR adalah salah satu input harus HIGH agar output-nya HIGH. Jika tegangan di-set 5V, lalu salah satu atau kedua A dan B dinyalakan, maka LED akan menyala.
 
+Gerbang OR menghasilkan output HIGH apabila minimal satu input aktif. Pada simulasi, LED akan menyala jika switch A atau B dinyalakan. Output hanya akan LOW jika seluruh input dalam keadaan LOW. Gerbang ini sering digunakan pada rangkaian dengan beberapa pilihan input untuk mengaktifkan perangkat.
+
 Berikut tabel kebenarannya:
 | A (1) | B (2) | OUTPUT LED |
 |-------|-------|------------|
@@ -50,7 +54,9 @@ Berikut tabel kebenarannya:
 
 <img width="309" height="247,5" alt="Screenshot 2026-05-17 130024" src="https://github.com/user-attachments/assets/323b43f9-8ae3-4421-b51e-d8404e980983" />
 
-Logika gerbang OR adalah *inventer* atau pembalik. Terlihat bahwa hanya terdapat satu jalur input dari DIP switch. Jika tegangan di-set 5V, lalu switch dimatikan, maka LED akan menyala.
+Logika gerbang NOT adalah *inventer* atau pembalik. Terlihat bahwa hanya terdapat satu jalur input dari DIP switch. Jika tegangan di-set 5V, lalu switch dimatikan, maka LED akan menyala.
+
+Gerbang NOT berfungsi untuk membalik logika input menjadi kebalikannya. Jika input LOW maka output menjadi HIGH, sedangkan jika input HIGH maka output menjadi LOW. Pada simulasi Tinkercad, LED akan menyala ketika switch dimatikan karena output berubah menjadi HIGH.
 
 Berikut tabel kebenarannya:
 | SWITCH | OUTPUT LED |
@@ -65,6 +71,8 @@ Berikut tabel kebenarannya:
 <img width="300" height="258" alt="Screenshot 2026-05-17 130030" src="https://github.com/user-attachments/assets/7ebe69d1-be64-4ba3-a80d-abdce859cdcd" />
 
 Logika gerbang NAND adalah output-nya kebalikan dari NAND. Jika tegangan di-set 5V, lalu salah satu atau kedua A dan B dimatikan, maka LED akan menyala.
+
+Gerbang NAND merupakan gabungan gerbang AND dan NOT sehingga output-nya merupakan kebalikan dari AND. Output hanya LOW ketika semua input HIGH. Jika salah satu input LOW, maka output menjadi HIGH dan LED menyala. Gerbang NAND sering digunakan karena termasuk gerbang universal yang dapat membentuk gerbang logika lain.
 
 Berikut tabel kebenarannya:
 | A (1) | B (2) | OUTPUT LED |
@@ -82,6 +90,8 @@ Berikut tabel kebenarannya:
 
 Logika gerbang NOR adalah output-nya kebalikan dari OR. Jika tegangan di-set 5V, lalu A dan B dimatikan, maka LED akan menyala.
 
+Gerbang NOR bekerja sebagai kebalikan dari gerbang OR. Output hanya akan HIGH jika semua input LOW. Pada simulasi, LED menyala ketika kedua switch dimatikan. Jika salah satu switch aktif, maka output menjadi LOW dan LED mati.
+
 Berikut tabel kebenarannya:
 | A (1) | B (2) | OUTPUT LED |
 |-------|-------|------------|
@@ -98,6 +108,8 @@ Berikut tabel kebenarannya:
 
 Logika gerbang XOR adalah semua input harus dalam kondisi berbeda agar output-nya HIGH. Jika tegangan di-set 5V, lalu salah satu A atau B dinyalakan, maka LED akan menyala.
 
+Gerbang XOR menghasilkan output HIGH jika kedua input memiliki kondisi yang berbeda. Jika kedua input sama-sama HIGH atau sama-sama LOW, maka output menjadi LOW. Pada simulasi, LED hanya menyala ketika salah satu switch aktif. Gerbang XOR sering digunakan pada rangkaian pembanding data digital.
+
 Berikut tabel kebenarannya:
 | A (1) | B (2) | OUTPUT LED |
 |-------|-------|------------|
@@ -113,6 +125,8 @@ Berikut tabel kebenarannya:
 <img width="357" height="255" alt="Screenshot 2026-05-17 130047" src="https://github.com/user-attachments/assets/cf78f282-1674-4066-8ed8-5cf49f04a098" />
 
 Logika gerbang XNOR adalah semua input harus dalam kondisi sama agar output-nya HIGH. Jika tegangan di-set 5V, lalu A dan B sama-sama dinyalakan atau dimatikan, maka LED akan menyala.
+
+Gerbang XNOR merupakan kebalikan dari XOR. Output akan HIGH apabila kedua input memiliki kondisi yang sama, baik sama-sama LOW maupun sama-sama HIGH. Pada simulasi Tinkercad, LED menyala ketika kedua switch berada pada kondisi yang sama. Gerbang ini biasanya digunakan untuk mendeteksi kesamaan data digital.
 
 Berikut tabel kebenarannya:
 | A (1) | B (2) | OUTPUT LED |
