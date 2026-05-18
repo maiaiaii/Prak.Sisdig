@@ -125,4 +125,9 @@ Berikut tabel kebenarannya:
 <br>
 
 ### Referensi
+
+#### Anggota Kelompok= Nama (NIM):
+- Maeda Kamila Fatrah (H1H025013)
+- Irsyad Amar Ramadhan (H1H025016)
+
 [Link Tinkercad](https://www.tinkercad.com/things/b4zTZpq5OK3-pert8-praksisdig?sharecode=J_NMEL4Qnbh_BZo_YMhxg6CQbPzr_iyVJqiaEJcwUz8)
